@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="FormCommandBar" id="-1"/>
+	<ChildItems>
+		<InputField name="Number" id="1">
+			<DataPath>Object.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="NumberContextMenu" id="2"/>
+			<ExtendedTooltip name="NumberExtendedTooltip" id="3"/>
+		</InputField>
+		<InputField name="Date" id="4">
+			<DataPath>Object.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="DateContextMenu" id="5"/>
+			<ExtendedTooltip name="DateExtendedTooltip" id="6"/>
+		</InputField>
+		<InputField name="Поставщик" id="7">
+			<DataPath>Object.Поставщик</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПоставщикContextMenu" id="8"/>
+			<ExtendedTooltip name="ПоставщикExtendedTooltip" id="9"/>
+		</InputField>
+		<InputField name="Договор" id="10">
+			<DataPath>Object.Договор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДоговорContextMenu" id="11"/>
+			<ExtendedTooltip name="ДоговорExtendedTooltip" id="12"/>
+		</InputField>
+		<Pages name="Pages" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="PagesExtendedTooltip" id="14"/>
+			<ChildItems>
+				<Page name="GroupМатериалы" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Материалы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupМатериалыExtendedTooltip" id="16"/>
+					<ChildItems>
+						<Table name="Материалы" id="17">
+							<Representation>List</Representation>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Материалы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МатериалыContextMenu" id="18"/>
+							<AutoCommandBar name="МатериалыCommandBar" id="19"/>
+							<ExtendedTooltip name="МатериалыExtendedTooltip" id="20"/>
+							<SearchStringAddition name="МатериалыSearchString" id="21">
+								<AdditionSource>
+									<Item>Материалы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МатериалыSearchStringContextMenu" id="22"/>
+								<ExtendedTooltip name="МатериалыSearchStringExtendedTooltip" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МатериалыViewStatus" id="24">
+								<AdditionSource>
+									<Item>Материалы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МатериалыViewStatusContextMenu" id="25"/>
+								<ExtendedTooltip name="МатериалыViewStatusExtendedTooltip" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МатериалыSearchControl" id="27">
+								<AdditionSource>
+									<Item>Материалы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="МатериалыSearchControlContextMenu" id="28"/>
+								<ExtendedTooltip name="МатериалыSearchControlExtendedTooltip" id="29"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="МатериалыLineNumber" id="30">
+									<DataPath>Object.Материалы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МатериалыLineNumberContextMenu" id="31"/>
+									<ExtendedTooltip name="МатериалыLineNumberExtendedTooltip" id="32"/>
+								</LabelField>
+								<InputField name="МатериалыМатериал" id="33">
+									<DataPath>Object.Материалы.Материал</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="МатериалыМатериалContextMenu" id="34"/>
+									<ExtendedTooltip name="МатериалыМатериалExtendedTooltip" id="35"/>
+								</InputField>
+								<InputField name="МатериалыКоличество" id="36">
+									<DataPath>Object.Материалы.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="МатериалыКоличествоContextMenu" id="37"/>
+									<ExtendedTooltip name="МатериалыКоличествоExtendedTooltip" id="38"/>
+									<Events>
+										<Event name="OnChange">МатериалыКоличествоOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="МатериалыЦена" id="39">
+									<DataPath>Object.Материалы.Цена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="МатериалыЦенаContextMenu" id="40"/>
+									<ExtendedTooltip name="МатериалыЦенаExtendedTooltip" id="41"/>
+									<Events>
+										<Event name="OnChange">МатериалыЦенаOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="МатериалыСумма" id="42">
+									<DataPath>Object.Материалы.Сумма</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>ИтогМатериалы</FooterDataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="МатериалыСуммаContextMenu" id="43"/>
+									<ExtendedTooltip name="МатериалыСуммаExtendedTooltip" id="44"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="GroupРасходники" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Расходники</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="GroupРасходникиExtendedTooltip" id="46"/>
+					<ChildItems>
+						<Table name="Расходники" id="47">
+							<Representation>List</Representation>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Object.Расходники</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РасходникиContextMenu" id="48"/>
+							<AutoCommandBar name="РасходникиCommandBar" id="49"/>
+							<ExtendedTooltip name="РасходникиExtendedTooltip" id="50"/>
+							<SearchStringAddition name="РасходникиSearchString" id="51">
+								<AdditionSource>
+									<Item>Расходники</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасходникиSearchStringContextMenu" id="52"/>
+								<ExtendedTooltip name="РасходникиSearchStringExtendedTooltip" id="53"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РасходникиViewStatus" id="54">
+								<AdditionSource>
+									<Item>Расходники</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасходникиViewStatusContextMenu" id="55"/>
+								<ExtendedTooltip name="РасходникиViewStatusExtendedTooltip" id="56"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РасходникиSearchControl" id="57">
+								<AdditionSource>
+									<Item>Расходники</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РасходникиSearchControlContextMenu" id="58"/>
+								<ExtendedTooltip name="РасходникиSearchControlExtendedTooltip" id="59"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="РасходникиLineNumber" id="60">
+									<DataPath>Object.Расходники.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РасходникиLineNumberContextMenu" id="61"/>
+									<ExtendedTooltip name="РасходникиLineNumberExtendedTooltip" id="62"/>
+								</LabelField>
+								<InputField name="РасходникиРасходник" id="63">
+									<DataPath>Object.Расходники.Расходник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РасходникиРасходникContextMenu" id="64"/>
+									<ExtendedTooltip name="РасходникиРасходникExtendedTooltip" id="65"/>
+								</InputField>
+								<InputField name="РасходникиКоличество" id="66">
+									<DataPath>Object.Расходники.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РасходникиКоличествоContextMenu" id="67"/>
+									<ExtendedTooltip name="РасходникиКоличествоExtendedTooltip" id="68"/>
+									<Events>
+										<Event name="OnChange">РасходникиКоличествоOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="РасходникиЦена" id="69">
+									<DataPath>Object.Расходники.Цена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РасходникиЦенаContextMenu" id="70"/>
+									<ExtendedTooltip name="РасходникиЦенаExtendedTooltip" id="71"/>
+									<Events>
+										<Event name="OnChange">РасходникиЦенаOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="РасходникиСумма" id="72">
+									<DataPath>Object.Расходники.Сумма</DataPath>
+									<Enabled>false</Enabled>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>ИтогРасходники</FooterDataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РасходникиСуммаContextMenu" id="73"/>
+									<ExtendedTooltip name="РасходникиСуммаExtendedTooltip" id="74"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЗаказПоставщику</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Object.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ИтогМатериалы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог материалы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогРасходники" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Итог расходники</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
