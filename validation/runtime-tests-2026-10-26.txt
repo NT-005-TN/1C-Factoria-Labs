@@ -1,0 +1,9 @@
+﻿PASS: order -> receipt supplier, contract and both tables
+Filter type: Fixed value array, count: 2
+PASS: production materials FixedArray has two kinds
+PASS: production document saved with fractional quantity
+PASS: posting produces quantity 3 and amount 700 (service quantity 1)
+PASS: reposting does not duplicate records
+PASS: DCS query, period expression, template and report output executed
+PASS: unposting removes register records
+ALL TESTS PASSED

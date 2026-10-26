@@ -1,0 +1,5 @@
+﻿&AtClientProcedure ТоварыКоличествоOnChange(Item)    CurrentRow = Items.Товары.CurrentData;    CurrentRow.Сумма =        CurrentRow.Количество * CurrentRow.Цена;    ПересчитатьИтоги();EndProcedure&AtClientProcedure ТоварыЦенаOnChange(Item)    CurrentRow = Items.Товары.CurrentData;    CurrentRow.Сумма =        CurrentRow.Количество * CurrentRow.Цена;    ПересчитатьИтоги();EndProcedure&AtClientProcedure УслугиСуммаOnChange(Item)    ПересчитатьИтоги();EndProcedure&AtClientProcedure ПересчитатьИтоги()    ИтогТовары = 0;    For Each CurrentRow In Object.Товары Do        ИтогТовары =            ИтогТовары + CurrentRow.Сумма;    EndDo;    ИтогУслуги = 0;    For Each CurrentRow In Object.Услуги Do        ИтогУслуги =            ИтогУслуги + CurrentRow.Сумма;    EndDo;EndProcedure
+&AtClient
+Procedure ПриОткрытииИтоги(Cancel)
+    ПересчитатьИтоги();
+EndProcedure
